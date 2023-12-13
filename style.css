@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+}
+
+main{
+    margin:0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin:0 1rem;
+}
+
+h1,h2,p{
+    margin:0;
+}
+
+p{
+    height: 0px;
+    overflow: hidden;
+}
+
+img{
+    vertical-align:middle;
+}
+
+.star-icon{
+    float:left;
+    margin-right: 1.5rem;
+}
+
+.neon-bg{
+    width: 100%;
+}
+
+article:first-of-type{
+    clear: left;
+}
+
+h2{
+    font-size: 1.2rem;
+    width: 85%;
+    vertical-align: middle;
+    text-align-last: initial;
+}
+
+article{
+    padding: 1rem 0;
+}
+
+div h2,div img{
+    display: inline-block;
+}
+
+article div{
+    text-align-last: justify;
+}
