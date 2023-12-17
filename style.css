@@ -11,8 +11,13 @@ main{
     margin:0 auto;
     overflow: hidden;
     border-radius: 1rem;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     margin:0 1rem;
+    position: relative;
+    background: white;
+    margin-top: -6rem;
+    max-width: 645px;
+    box-shadow: 0px 5px 50px -20px hsl(292, 42%, 14%);
 }
 
 h1,h2,p{
@@ -20,17 +25,18 @@ h1,h2,p{
 }
 
 p{
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+p.active-content{
+    max-height:150px;
+    overflow: scroll;
 }
 
 img{
     vertical-align:middle;
-}
-
-.star-icon{
-    float:left;
-    margin-right: 1.5rem;
 }
 
 .neon-bg{
@@ -41,6 +47,13 @@ article:first-of-type{
     clear: left;
 }
 
+h1{
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
 h2{
     font-size: 1.2rem;
     width: 85%;
@@ -48,8 +61,13 @@ h2{
     text-align-last: initial;
 }
 
+article:hover h2{
+    color: #AD28EB;
+}
+
 article{
     padding: 1rem 0;
+    cursor: pointer;
 }
 
 div h2,div img{
@@ -58,4 +76,16 @@ div h2,div img{
 
 article div{
     text-align-last: justify;
+    margin-bottom: 1rem;
+}
+
+article+article{
+    border-top: 1px solid hsl(275,100%,97%);
+}
+
+@media screen and (min-width: 701px){
+    main{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
